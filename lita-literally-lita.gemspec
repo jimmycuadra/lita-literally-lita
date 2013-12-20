@@ -1,12 +1,13 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-literally-lita"
-  spec.version       = "0.0.1"
+  spec.version       = "0.0.2"
   spec.authors       = ["Jimmy Cuadra"]
   spec.email         = ["jimmy@jimmycuadra.com"]
   spec.description   = %q{A Lita handler to make Lita act like Lita.}
   spec.summary       = %q{A Lita handler to make Lita act like Lita.}
   spec.homepage      = "https://github.com/jimmycuadra/lita-literally-lita"
   spec.license       = "MIT"
+  spec.metadata      = { "lita_plugin_type" => "handler" }
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
